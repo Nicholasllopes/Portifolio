@@ -11,6 +11,9 @@ body {
     font-family:'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* INICIO HEADER */
 
@@ -171,7 +174,8 @@ body {
 }
 
 .list img {
-    width: 30%;
+    border-radius: 5%;
+    width: 22%;
     margin-left: 0.5%;
     margin-right: 0.5%;
     opacity: 0.5;
@@ -188,12 +192,90 @@ body {
     border: 0;
     padding: 18px;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    transition: 0.9s;
     margin: 20px;
+    cursor: pointer;
 }
 .call--to--action2:hover{ 
     transform: scale(1.1);
 
+}
+/** Final Projetos **/
+
+/**Inicio RodaPé **/
+
+footer{
+    width: 100%;
+    background-color: #181818;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffff;
+}
+footer p {
+    margin-left: 12px;
+}
+
+/**Fim rodepé **/
+
+/**Respodividade**/
+
+@media (max-width: 1025px) {
+
+    .main h1 {
+        font-size: 25px;
+    }
+    .manin {
+        background-size: cover;
+    }
+
+
+    .about {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .about div {
+        max-width: 80%;
+    }
+
+    .about div h2 {
+        font-size: 40px;
+    }
+
+    .about img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+
+    .lista--projetos img {
+
+            width: 30%;
+
+    }
+
+    footer {
+        flex-direction: column;
+
+    }
+
+
+    footer {
+
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    footer p {
+        margin: 0;
+    }
 }
